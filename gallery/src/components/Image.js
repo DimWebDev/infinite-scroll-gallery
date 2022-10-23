@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Span } from "./atoms/Span";
 import "../Styles/style.css";
@@ -16,6 +17,9 @@ const StyledImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const ImageText = styled.div`

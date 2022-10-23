@@ -12,10 +12,13 @@ const StyledSpan = styled.span`
   position: relative;
   top: 200px;
   left: 50px;
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
+
+  border-bottom: solid 5px white;
   cursor: pointer;
   font-weight: bold;
+  @media (max-width: 480px) {
+    left: 150px;
+  }
 `;
 
 const FavouriteSpan = styled(StyledSpan)`
@@ -27,7 +30,7 @@ const FavouriteSpan = styled(StyledSpan)`
   padding: 20px;
 `;
 const DescriptionSpan = styled(StyledSpan)`
-  text-decoration: none;
+  border: none;
   color: white;
   font-style: italic;
   font-weight: normal;
