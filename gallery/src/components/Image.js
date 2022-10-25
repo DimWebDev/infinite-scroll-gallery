@@ -59,7 +59,6 @@ export const Image = ({ images }) => {
             </ImageText>
           </>
         ))}
-        );
       </ImageContainer>
     </>
   );
