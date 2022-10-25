@@ -19,6 +19,10 @@ const StyledSpan = styled.span`
   @media (max-width: 480px) {
     left: 150px;
   }
+  @media (max-width: 768px) {
+    left: 30px;
+    font-size: 15px;
+  }
 `;
 
 const FavouriteSpan = styled(StyledSpan)`

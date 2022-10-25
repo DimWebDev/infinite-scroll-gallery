@@ -1,8 +1,6 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import styled from "styled-components";
-import { Span } from "./atoms/Span";
-import "../Styles/style.css";
+import { Span } from "./Span";
 
 const ImageContainer = styled.div`
   max-width: 70rem;
@@ -11,6 +9,14 @@ const ImageContainer = styled.div`
   grid-gap: 1em;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: 300px;
+  @media (max-width: 768px) {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    grid-template-columns: repeat(1fr);
+  }
 `;
 
 const StyledImg = styled.img`
@@ -19,6 +25,9 @@ const StyledImg = styled.img`
   object-fit: cover;
   @media (max-width: 480px) {
     width: 100%;
+  }
+  @media (max-width: 768px) {
+    height: 100%;
   }
 `;
 

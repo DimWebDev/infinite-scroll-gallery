@@ -4,7 +4,6 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import axios from "axios";
 import { Image } from "./Image";
 import { LoaderIcon } from "./LoaderIcon";
-import { Span } from "./atoms/Span";
 
 export const Gallery = () => {
   const [images, setImages] = useState([]);
