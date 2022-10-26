@@ -23,6 +23,7 @@ const StyledImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+
   @media (max-width: 480px) {
     width: 100%;
   }
@@ -33,6 +34,9 @@ const StyledImg = styled.img`
 
 const ImageText = styled.div`
   box-sizing: border-box;
+  &:hover {
+    opacity: 0.6;
+  }
   span {
     visibility: hidden;
   }
